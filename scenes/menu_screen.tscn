@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=3 uid="uid://b55bhjgc1srrh"]
+
+[ext_resource type="Script" path="res://scripts/menu_screen.gd" id="1_ccp1v"]
+[ext_resource type="Texture2D" uid="uid://c644ai3lw5ofw" path="res://assets/BG/Map.png" id="1_hmco6"]
+[ext_resource type="FontFile" uid="uid://dct8501q0qoa0" path="res://assets/fonts/Kenney Pixel Square.ttf" id="2_pt5c0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gbxql"]
+font = ExtResource("2_pt5c0")
+font_size = 36
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
+[node name="MenuScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ccp1v")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_hmco6")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.490196)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -111.0
+offset_right = 57.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "DANGER ZONE
+"
+label_settings = SubResource("LabelSettings_gbxql")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -16.0
+offset_right = 53.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_pt5c0")
+text = "PLAY"
+
+[connection signal="pressed" from="PlayBtn" to="." method="_on_play_btn_pressed"]
