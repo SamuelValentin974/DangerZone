@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dv66dveyru0ws"]
+[gd_scene load_steps=34 format=3 uid="uid://dn5pqod864u6p"]
 
 [ext_resource type="Texture2D" uid="uid://btngh2l6aocl" path="res://assets/Adventurer/Hiker/Separated Animation PNGs/Flying.png" id="1_3qwbk"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_5mykx"]

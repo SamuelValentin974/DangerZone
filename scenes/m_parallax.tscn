@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://urgl2yuqb85p"]
+
+[ext_resource type="Texture2D" uid="uid://yhwuuf83an2o" path="res://assets/Rocky Roads/Backgrounds/mountains_a.png" id="1_guaie"]
+[ext_resource type="Texture2D" uid="uid://ykul0qcm0md3" path="res://assets/Rocky Roads/Backgrounds/mountains_b.png" id="2_phbqk"]
+[ext_resource type="Texture2D" uid="uid://eroekau5e0xy" path="res://assets/Rocky Roads/Backgrounds/trees.png" id="3_eofql"]
+
+[node name="MParallax" type="Node2D"]
+position = Vector2(0, -24)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -24)
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(6.10352e-05, 0)
+scale = Vector2(4.49219, 5.04688)
+texture = ExtResource("1_guaie")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -24)
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(4.5, 5.0625)
+texture = ExtResource("2_phbqk")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -24)
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(0, 192)
+scale = Vector2(4.51563, 2)
+texture = ExtResource("3_eofql")
