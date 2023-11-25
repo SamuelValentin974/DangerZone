@@ -33,3 +33,6 @@ position = Vector2(129, 250)
 [node name="Player" parent="." instance=ExtResource("2_50h4o")]
 
 [node name="UILayer" parent="." instance=ExtResource("5_arqsn")]
+
+[node name="SpawnPos" type="Marker2D" parent="."]
+position = Vector2(24, 243)

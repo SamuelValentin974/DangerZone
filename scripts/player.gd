@@ -4,6 +4,7 @@ class_name Player
 @onready var _spr = $AnimatedSprite2D
 
 @export var _gravity = 400
+
 var _jumpForce = 200;
 var _dir = 0
 var _speed = 125
@@ -24,6 +25,9 @@ func _physics_process(delta):
 	
 func jump(force):
 	velocity.y = -force
+	
+func IsActive():
+	return _active
 
 func updateAnimations():
 	if _dir != 0:

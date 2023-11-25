@@ -13,7 +13,6 @@ var _playerNear = false
 func _process(delta):
 	if _playerNear:
 		if Input.is_action_just_pressed("action"):
-			print("entered ! + pressed ! ")
 			ResetTimer()
 
 func _ready():
@@ -28,7 +27,6 @@ func _ready():
 
 func _on_body_entered(body):
 	if body is Player:
-		print("entered !")
 		_playerNear = true
 			
 func ResetTimer():

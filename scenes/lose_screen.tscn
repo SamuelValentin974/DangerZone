@@ -1,0 +1,102 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxv4g2rbyvt2x"]
+
+[ext_resource type="Script" path="res://scripts/lose_screen.gd" id="1_hs02f"]
+[ext_resource type="FontFile" uid="uid://dct8501q0qoa0" path="res://assets/fonts/Kenney Pixel Square.ttf" id="1_mxr4f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n0xao"]
+font = ExtResource("1_mxr4f")
+font_size = 32
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8s08d"]
+font = ExtResource("1_mxr4f")
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="LoseScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hs02f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.486275)
+
+[node name="RetryBtn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = 7.0
+offset_right = 53.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mxr4f")
+text = "Retry"
+
+[node name="QuitBtn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = 55.0
+offset_right = 53.0
+offset_bottom = 87.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mxr4f")
+text = "QUIT"
+
+[node name="LostLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -105.0
+offset_right = 38.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You lost..."
+label_settings = SubResource("LabelSettings_n0xao")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -32.0
+offset_right = 54.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Score : 000"
+label_settings = SubResource("LabelSettings_8s08d")
+
+[connection signal="pressed" from="RetryBtn" to="." method="_on_retry_btn_pressed"]
+[connection signal="pressed" from="QuitBtn" to="." method="_on_quit_btn_pressed"]
