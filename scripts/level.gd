@@ -42,9 +42,10 @@ func _process(delta):
 	CheckInputs()
 	CheckActives()
 	if (_activePipes == 0) :
-		_ui.setLoseScreen(_score, 0, true)
 		_player._active = false
 		_player._dir = 0
+		await get_tree().create_timer(1).timeout
+		_ui.setLoseScreen(_score, 0, true)
 
 func ResetPlayer():
 	_player.velocity = Vector2.ZERO

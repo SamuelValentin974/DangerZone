@@ -2,6 +2,7 @@ extends CharacterBody2D
 class_name Player
 
 @onready var _spr = $AnimatedSprite2D
+@onready var _jumpSound = $JumpSound
 
 @export var _gravity = 400
 
@@ -19,6 +20,7 @@ func _physics_process(delta):
 		velocity.y = 500
 	if _active:
 		if Input.is_action_just_pressed("jump") && is_on_floor():
+			_jumpSound.play()
 			jump(_jumpForce)
 		_dir = Input.get_axis("left", "right")
 	velocity.x = _dir * _speed

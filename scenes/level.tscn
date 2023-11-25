@@ -13,8 +13,13 @@ size = Vector2(2258, 48)
 [node name="Level" type="Node2D"]
 script = ExtResource("1_oj6wg")
 
-[node name="Geyser" parent="." instance=ExtResource("2_l5sij")]
-position = Vector2(80, 304)
+[node name="Geysers" type="Node2D" parent="."]
+
+[node name="Geyser" parent="Geysers" instance=ExtResource("2_l5sij")]
+position = Vector2(80, 367)
+
+[node name="Geyser2" parent="Geysers" instance=ExtResource("2_l5sij")]
+position = Vector2(237, 371)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(0, 280)
