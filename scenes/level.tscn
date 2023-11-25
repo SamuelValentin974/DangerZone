@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dkhdbpbvgylwc"]
+[gd_scene load_steps=8 format=3 uid="uid://dkhdbpbvgylwc"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_oj6wg"]
 [ext_resource type="PackedScene" uid="uid://dv66dveyru0ws" path="res://scenes/player.tscn" id="2_50h4o"]
+[ext_resource type="PackedScene" uid="uid://b42dvf78uqx11" path="res://scenes/geyser.tscn" id="2_l5sij"]
 [ext_resource type="Texture2D" uid="uid://chpn7ki8x8374" path="res://icon.svg" id="3_jw16e"]
 [ext_resource type="PackedScene" uid="uid://ltsaf0fx1j4f" path="res://scenes/gas_btn.tscn" id="4_x7qk4"]
 [ext_resource type="PackedScene" uid="uid://coycb8wh2ia3" path="res://scenes/ui_layer.tscn" id="5_arqsn"]
@@ -11,6 +12,9 @@ size = Vector2(2258, 48)
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_oj6wg")
+
+[node name="Geyser" parent="." instance=ExtResource("2_l5sij")]
+position = Vector2(80, 304)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(0, 280)

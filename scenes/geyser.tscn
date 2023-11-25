@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=3 uid="uid://b42dvf78uqx11"]
+
+[ext_resource type="Script" path="res://scripts/geyser.gd" id="1_pq7ka"]
+[ext_resource type="Texture2D" uid="uid://df6qso2dnlhbg" path="res://assets/tile_0035.png" id="1_x1uug"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1xso"]
+size = Vector2(14, 48)
+
+[sub_resource type="Animation" id="Animation_vsyrf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_cs48n"]
+resource_name = "elevate"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -20)]
+}
+
+[sub_resource type="Animation" id="Animation_efnuk"]
+resource_name = "descend"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -20), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fc60r"]
+_data = {
+"RESET": SubResource("Animation_vsyrf"),
+"descend": SubResource("Animation_efnuk"),
+"elevate": SubResource("Animation_cs48n")
+}
+
+[node name="Geyser" type="Node2D" groups=["geyser"]]
+script = ExtResource("1_pq7ka")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(1, 3)
+texture = ExtResource("1_x1uug")
+offset = Vector2(0, -9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_t1xso")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fc60r")
+}
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

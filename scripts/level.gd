@@ -10,9 +10,11 @@ var _score = 0
 @onready var _spawnPos = $SpawnPos
 @onready var _player = $Player
 @onready var _ui = $UILayer
+@onready var _geysers
 
 func _ready():
 	ResetPlayer()
+	_geysers = get_tree().get_nodes_in_group("geyser")
 	_pipes = get_tree().get_nodes_in_group("pipes")
 	for pipe in _pipes:
 		if pipe is GasBtn:
@@ -59,4 +61,3 @@ func on_score_timer_timeout():
 		if _player.IsActive():
 			_score += 10
 			_hud.SetScore(_score)
-	

@@ -28,7 +28,7 @@ func _ready():
 func _on_body_entered(body):
 	if body is Player:
 		_playerNear = true
-			
+
 func ResetTimer():
 	_timeLeft = _timeBtn
 	SetTimeLabel(_timeLeft)
