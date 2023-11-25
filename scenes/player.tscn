@@ -214,6 +214,7 @@ animations = [{
 size = Vector2(13, 25)
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(0, 8)
 script = ExtResource("1_5mykx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -226,4 +227,5 @@ position = Vector2(-0.5, -12.5)
 shape = SubResource("RectangleShape2D_kf3wv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -8)
 limit_bottom = 300

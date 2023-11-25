@@ -1,18 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dxawp7hs3k1gp"]
+[gd_scene load_steps=2 format=3 uid="uid://dxawp7hs3k1gp"]
 
-[ext_resource type="Texture2D" uid="uid://bvwbcwiavuyq1" path="res://assets/Rocky Roads/Tilesets/tileset_forest.png" id="1_aaj2u"]
+[sub_resource type="TileSet" id="TileSet_mna5o"]
+physics_layer_0/collision_layer = 1
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ce50s"]
-texture = ExtResource("1_aaj2u")
-8:1/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
+[node name="Node2D" type="Node2D"]
 
-[sub_resource type="TileSet" id="TileSet_uls5v"]
-sources/2 = SubResource("TileSetAtlasSource_ce50s")
-
-[node name="TileMap" type="TileMap"]
-tile_set = SubResource("TileSet_uls5v")
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(0.966484, 0.87294)
+tile_set = SubResource("TileSet_mna5o")
 format = 2
-layer_0/tile_data = PackedInt32Array(0, 524290, 3, 1, 589826, 3, 2, 655362, 3, 3, 524290, 3, 4, 589826, 3, 5, 655362, 3, 6, 524290, 3, 7, 589826, 3, 8, 655362, 3, 9, 524290, 3, 10, 589826, 3, 11, 655362, 3, 12, 524290, 3, 13, 589826, 3, 14, 655362, 3, 15, 524290, 3, 16, 589826, 3, 17, 655362, 3, 18, 524290, 3, 19, 589826, 3, 20, 655362, 3, 21, 524290, 3, 22, 589826, 3, 23, 655362, 3, 24, 524290, 3, 25, 589826, 3, 26, 655362, 3, 27, 524290, 3, 28, 589826, 3, 29, 655362, 3, 30, 524290, 3, 31, 589826, 3, 32, 655362, 3, 65533, 524290, 3, 65534, 589826, 3, 65535, 655362, 3, 65530, 524290, 3, 65531, 589826, 3, 65532, 655362, 3, 65527, 524290, 3, 65528, 589826, 3, 65529, 655362, 3, 65524, 524290, 3, 65525, 589826, 3, 65526, 655362, 3)
+layer_0/name = "Ground"
+layer_0/tile_data = PackedInt32Array(1245184, 524288, 3, 1245185, 589824, 3, 1245186, 524288, 3, 1245187, 589824, 3, 1245188, 655360, 3, 1245189, 524288, 3, 1245190, 589824, 3, 1245191, 655360, 3, 1245192, 524288, 3, 1245193, 589824, 3, 1245194, 655360, 3, 1245195, 524288, 3, 1245196, 589824, 3, 1245197, 655360, 3, 1245198, 524288, 3, 1245199, 589824, 3, 1245200, 655360, 3, 1245201, 524288, 3, 1245202, 589824, 3, 1245203, 655360, 3, 1245204, 524288, 3, 1245205, 589824, 3, 1245206, 655360, 3, 1245207, 524288, 3, 1245208, 589824, 3, 1245209, 655360, 3, 1245210, 524288, 3, 1245211, 589824, 3, 1245212, 655360, 3, 1245213, 524288, 3, 1245214, 589824, 3, 1245215, 655360, 3)
