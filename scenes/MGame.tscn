@@ -1,14 +1,18 @@
-[gd_scene load_steps=16 format=3 uid="uid://wm4klbyn5why"]
+[gd_scene load_steps=20 format=3 uid="uid://wm4klbyn5why"]
 
-[ext_resource type="PackedScene" uid="uid://f3858h0ptp3x" path="res://scenes/deco.tscn" id="3_bnyoi"]
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_1ljb4"]
+[ext_resource type="PackedScene" uid="uid://b42dvf78uqx11" path="res://scenes/geyser.tscn" id="2_fqv3g"]
+[ext_resource type="PackedScene" path="res://scenes/deco.tscn" id="3_bnyoi"]
 [ext_resource type="Texture2D" uid="uid://bvwbcwiavuyq1" path="res://assets/Rocky Roads/Tilesets/tileset_forest.png" id="3_dsjfy"]
-[ext_resource type="PackedScene" uid="uid://dn5pqod864u6p" path="res://scenes/player.tscn" id="3_iu445"]
+[ext_resource type="PackedScene" uid="uid://dv66dveyru0ws" path="res://scenes/player.tscn" id="3_iu445"]
 [ext_resource type="PackedScene" uid="uid://urgl2yuqb85p" path="res://scenes/m_parallax.tscn" id="3_oh4n4"]
 [ext_resource type="Texture2D" uid="uid://d3xrdakqchwjx" path="res://assets/Rocky Roads/Deco/water_a_8frames.png" id="6_8qdtf"]
 [ext_resource type="Texture2D" uid="uid://bd0i35w43l3rt" path="res://assets/Rocky Roads/Backgrounds/Foreground/Tileset.png" id="7_w8rrn"]
 [ext_resource type="AudioStream" uid="uid://b4hw1ptlni8hm" path="res://Audio/mixkit-bubbling-volcano-lava-2440.wav" id="8_3bqwv"]
 [ext_resource type="Texture2D" uid="uid://q2mjs5ki4hig" path="res://assets/Rocky Roads/Deco/lava.png" id="8_aepmq"]
 [ext_resource type="AudioStream" uid="uid://deq3aiag04xee" path="res://Audio/Moving On (Rimworld OST).mp3" id="9_w2dsa"]
+[ext_resource type="PackedScene" uid="uid://coycb8wh2ia3" path="res://scenes/ui_layer.tscn" id="11_ciyyi"]
+[ext_resource type="PackedScene" uid="uid://ltsaf0fx1j4f" path="res://scenes/gas_btn.tscn" id="12_png03"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_e3eds"]
 tile_data = PackedInt32Array(0, 131072, 0, 65536, 131072, 1, 131072, 262144, 3, 196608, 131072, 3, 65537, 262144, 1, 131073, 196608, 2, 196609, 196608, 3, 2, 327680, 0, 65538, 196608, 1, 131074, 262144, 2, 196610, 262144, 3, 3, 196608, 0, 65539, 262144, 1, 131075, 262144, 3, 196611, 327680, 3, 65540, 196608, 1, 131076, 262144, 2, 196612, 131072, 3, 5, 131072, 0, 65541, 262144, 1, 131077, 196608, 2, 196613, 262144, 3, 6, 327680, 0, 65542, 196608, 1, 131078, 262144, 3, 196614, 131072, 3, 7, 131072, 0, 65543, 262144, 1, 131079, 196608, 2, 196615, 196608, 3, 8, 196608, 0, 65544, 196608, 1, 131080, 262144, 3, 196616, 262144, 3, 65545, 262144, 1, 131081, 196608, 2, 196617, 327680, 3, 10, 327680, 0, 65546, 196608, 1, 131082, 262144, 2, 196618, 131072, 3, 11, 327680, 0, 65547, 262144, 1, 131083, 262144, 3, 196619, 196608, 3, 12, 196608, 0, 65548, 196608, 1, 131084, 262144, 2, 196620, 262144, 3, 65549, 262144, 1, 131085, 196608, 2, 14, 327680, 0, 65550, 196608, 1, 131086, 262144, 3, 196622, 131072, 3, 65551, 262144, 1, 131087, 196608, 2, 196623, 196608, 3, 65552, 196608, 1, 131088, 262144, 2, 196624, 262144, 3, 17, 131072, 0, 65553, 262144, 1, 131089, 196608, 2, 196625, 327680, 3, 18, 196608, 0, 65554, 196608, 1, 131090, 262144, 3, 196626, 131072, 3, 19, 196608, 0, 65555, 262144, 1, 131091, 196608, 2, 196627, 196608, 3, 65556, 196608, 1, 131092, 262144, 2, 196628, 262144, 3, 65557, 262144, 1, 131093, 196608, 2, 196629, 327680, 3, 22, 131072, 0, 65558, 196608, 1, 131094, 262144, 3, 196630, 131072, 3, 65559, 262144, 1, 131095, 196608, 2, 196631, 196608, 3, 24, 131072, 0, 65560, 196608, 1, 131096, 262144, 2, 196632, 262144, 3, 65561, 262144, 1, 131097, 262144, 3, 196633, 327680, 3, 26, 327680, 0, 65562, 196608, 1, 131098, 262144, 2, 196634, 131072, 3, 27, 131072, 0, 65563, 262144, 1, 131099, 196608, 2, 196635, 196608, 3, 28, 196608, 0, 65564, 196608, 1, 131100, 262144, 3, 196636, 262144, 3, 65565, 262144, 1, 131101, 262144, 3, 196637, 131072, 3, 30, 131072, 0, 65566, 196608, 1, 131102, 262144, 3, 196638, 196608, 3)
@@ -194,6 +198,25 @@ sources/12 = SubResource("TileSetAtlasSource_qft0m")
 pattern_0 = SubResource("TileMapPattern_e3eds")
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_1ljb4")
+
+[node name="Geysers" type="Node2D" parent="."]
+z_index = -10
+
+[node name="Geyser" parent="Geysers" instance=ExtResource("2_fqv3g")]
+position = Vector2(1304, 309)
+
+[node name="Geyser2" parent="Geysers" instance=ExtResource("2_fqv3g")]
+position = Vector2(1430, 309)
+
+[node name="Geyser3" parent="Geysers" instance=ExtResource("2_fqv3g")]
+position = Vector2(1362, 309)
+
+[node name="Geyser4" parent="Geysers" instance=ExtResource("2_fqv3g")]
+position = Vector2(1248, 309)
+
+[node name="Geyser5" parent="Geysers" instance=ExtResource("2_fqv3g")]
+position = Vector2(1474, 309)
 
 [node name="MParallax" parent="." instance=ExtResource("3_oh4n4")]
 position = Vector2(264, 160)
@@ -222,3 +245,28 @@ autoplay = true
 stream = ExtResource("9_w2dsa")
 volume_db = -25.297
 autoplay = true
+
+[node name="UILayer" parent="." instance=ExtResource("11_ciyyi")]
+
+[node name="SpawnPos" type="Marker2D" parent="."]
+position = Vector2(189, 182)
+
+[node name="Pipes" type="Node2D" parent="."]
+
+[node name="GasBtn" parent="Pipes" instance=ExtResource("12_png03")]
+position = Vector2(622, 193)
+
+[node name="GasBtn3" parent="Pipes" instance=ExtResource("12_png03")]
+position = Vector2(813, 194)
+
+[node name="GasBtn4" parent="Pipes" instance=ExtResource("12_png03")]
+position = Vector2(986, 194)
+
+[node name="GasBtn5" parent="Pipes" instance=ExtResource("12_png03")]
+position = Vector2(1535, 194)
+
+[node name="GasBtn6" parent="Pipes" instance=ExtResource("12_png03")]
+position = Vector2(1134, 194)
+
+[node name="GasBtn2" parent="Pipes" instance=ExtResource("12_png03")]
+position = Vector2(39, 194)
