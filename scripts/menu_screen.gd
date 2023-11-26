@@ -6,3 +6,7 @@ func _process(delta):
 
 func _on_play_btn_pressed():
 	get_tree().change_scene_to_file("res://scenes/MGame.tscn")
+
+
+func _on_quit_pressed():
+	get_tree().quit()
