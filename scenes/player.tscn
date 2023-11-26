@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dn5pqod864u6p"]
+[gd_scene load_steps=35 format=3 uid="uid://dn5pqod864u6p"]
 
 [ext_resource type="Texture2D" uid="uid://btngh2l6aocl" path="res://assets/Adventurer/Hiker/Separated Animation PNGs/Flying.png" id="1_3qwbk"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_5mykx"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://coxxi42uhp12s" path="res://assets/Adventurer/Hiker/Separated Animation PNGs/Jump.png" id="3_n1xwa"]
 [ext_resource type="Texture2D" uid="uid://b2p7q7yslxcbi" path="res://assets/Adventurer/Hiker/Separated Animation PNGs/Run.png" id="4_a2yaf"]
 [ext_resource type="Texture2D" uid="uid://ctn5wu7cbuq5b" path="res://assets/Adventurer/Hiker/Separated Animation PNGs/Walk.png" id="5_pg0jw"]
+[ext_resource type="AudioStream" uid="uid://dupb3oh5nbj7r" path="res://Audio/running-1-6846 (mp3cut.net).mp3" id="7_dt6er"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nsurk"]
 atlas = ExtResource("1_3qwbk")
@@ -229,3 +230,9 @@ shape = SubResource("RectangleShape2D_kf3wv")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -8)
 limit_bottom = 300
+
+[node name="footStep" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_dt6er")
+volume_db = 9.972
+pitch_scale = 1.24
+stream_paused = true
