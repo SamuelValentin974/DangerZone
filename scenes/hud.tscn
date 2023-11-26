@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfpbxtasd5c56"]
+
+[ext_resource type="FontFile" uid="uid://dct8501q0qoa0" path="res://assets/fonts/Kenney Pixel Square.ttf" id="1_1dm4u"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_g6hc5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_opaqp"]
+font = ExtResource("1_1dm4u")
+font_size = 14
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uwmn2"]
+font = ExtResource("1_1dm4u")
+font_size = 14
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g6hc5")
+
+[node name="ActivesLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -127.0
+offset_right = 20.0
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Pipes active :  5 / 5"
+label_settings = SubResource("LabelSettings_opaqp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7.0
+offset_top = -129.0
+offset_right = 79.0
+offset_bottom = -102.0
+grow_vertical = 2
+text = "SCORE : "
+label_settings = SubResource("LabelSettings_uwmn2")
