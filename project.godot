@@ -62,3 +62,4 @@ action={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/size/window_width_override=1415

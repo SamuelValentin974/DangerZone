@@ -3,6 +3,8 @@ class_name Player
 
 @onready var _spr = $AnimatedSprite2D
 @onready var _jumpSound = $JumpSound
+@onready var footStep = $FootStep
+
 
 @export var _gravity = 400
 
@@ -41,14 +43,16 @@ func IsStunned():
 	
 func ResetSpeed():
 	_speed = _defaultSpeed
+	footStep.stop()
 
 func updateAnimations():
 	if _dir != 0:
 		_spr.flip_h = (_dir == -1)
 	if is_on_floor():
 		if _dir == 0:
+			footStep.play()
 			_spr.play("idle")
 		else:
 			_spr.play("run")
 	else:
-			_spr.play("fall")
+		_spr.play("fall")

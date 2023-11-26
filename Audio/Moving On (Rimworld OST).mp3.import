@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://deq3aiag04xee"
+path="res://.godot/imported/Moving On (Rimworld OST).mp3-15ce7b9295e2f1d3dff871c4064a9188.mp3str"
+
+[deps]
+
+source_file="res://Audio/Moving On (Rimworld OST).mp3"
+dest_files=["res://.godot/imported/Moving On (Rimworld OST).mp3-15ce7b9295e2f1d3dff871c4064a9188.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

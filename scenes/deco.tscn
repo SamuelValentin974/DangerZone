@@ -1,0 +1,212 @@
+[gd_scene load_steps=5 format=3 uid="uid://f3858h0ptp3x"]
+
+[ext_resource type="Texture2D" uid="uid://c4qgf2dw0e8qo" path="res://assets/Rocky Roads/Deco/tree_b.png" id="1_lo65d"]
+[ext_resource type="Texture2D" uid="uid://cxauq8d3ph1je" path="res://assets/Rocky Roads/Deco/bush.png" id="2_flrly"]
+[ext_resource type="Texture2D" uid="uid://0q4gyap3swap" path="res://assets/Rocky Roads/Deco/rock.png" id="3_cxmpg"]
+[ext_resource type="Texture2D" uid="uid://dbg0q4f2mqyg8" path="res://assets/Rocky Roads/Deco/tree_trunk.png" id="4_mp3p8"]
+
+[node name="deco" type="Node2D"]
+
+[node name="TreeB" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(160, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(184, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(216, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="Bush" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(248, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(272, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(296, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(320, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Rock" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(392, 224)
+scale = Vector2(4, 5)
+texture = ExtResource("3_cxmpg")
+
+[node name="TreeTrunk" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(349, 256)
+scale = Vector2(1.5, 1)
+texture = ExtResource("4_mp3p8")
+
+[node name="TreeB4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(520, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB5" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(584, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB6" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(648, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB7" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(688, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB8" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(712, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB9" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(744, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="Bush5" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(776, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush6" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(800, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush7" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(824, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush8" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(848, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Rock2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(920, 224)
+scale = Vector2(4, 5)
+texture = ExtResource("3_cxmpg")
+
+[node name="TreeTrunk2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(877, 256)
+scale = Vector2(1.5, 1)
+texture = ExtResource("4_mp3p8")
+
+[node name="TreeB10" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1048, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB11" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1112, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB12" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1176, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB13" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(480, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB14" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(504, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB15" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(536, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="Bush9" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(568, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush10" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(592, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush11" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(616, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Bush12" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(640, 256)
+texture = ExtResource("2_flrly")
+
+[node name="Rock3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(712, 224)
+scale = Vector2(4, 5)
+texture = ExtResource("3_cxmpg")
+
+[node name="TreeTrunk3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(669, 256)
+scale = Vector2(1.5, 1)
+texture = ExtResource("4_mp3p8")
+
+[node name="TreeB16" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(840, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB17" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(904, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
+
+[node name="TreeB18" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(968, 200)
+scale = Vector2(1.66667, 2)
+texture = ExtResource("1_lo65d")
